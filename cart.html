@@ -13,9 +13,9 @@
             <h1>Shop <span>Tech</span></h1>
         </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Store</a>
+            <button class="head-btn1"><a href="#">Home</a></button>
+            <button class="head-btn1"><a href="#">About</a></button>
+            <button class="head-btn1"><a href="#">Store</a></button>
         </nav>
         <div class="icons">
             <i class="fa-brands fa-instagram"></i>
@@ -28,6 +28,13 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+        .head-btn1{
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #ee86ae,rgb(148, 119, 226));
+            
         }
         .icons {
             display: flex;
@@ -57,7 +64,7 @@
         }
         nav a {
             text-decoration: none;
-            color: black;
+            color: white;
         }
         nav a:hover{
             text-decoration: underline;
@@ -86,7 +93,7 @@
         <div class="shop-items">
             <div class="shop-item">
                 <span class="shop-item-title">Headphone</span>
-                    <img class="shop-item-image" src="./headphones.png">
+                    <img class="shop-item-image" src="./apple-airpods.webp">
                     <div class="shop-item-details">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, dolore.</p>
                         <span class="shop-item-price">$120.99</span>
@@ -142,9 +149,9 @@
         <section class="container content-section">
             <h2 class="section-header">CART</h2>
             <div class="cart-row">
-                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-item cart-header cart-column">ITEMS,</span>
                 <span class="cart-price cart-header cart-column">PRICE</span>
-                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                <span class="cart-quantity cart-header cart-column">& QUANTITY</span>
             </div>
 
             <div class="cart-items">
@@ -212,6 +219,18 @@
         .cart-total {
             font-size: 20px;
         }
+        .cart-row{
+            display: flex;
+            gap: 17px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .cart-quantity {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
         .btn-purchase {
             padding: 10px;
             font-size: 14px;
@@ -224,6 +243,14 @@
         .btn-purchase:hover {
             background-color: hsl(209, 51%, 55%);
         }
+        .btn-danger{
+            padding: 10px;
+            border-radius: 14px;
+            background: linear-gradient(90deg, #e7164a,rgb(226, 145, 190));
+            color: white;
+            border: none;
+        }
     </style>
+    <script src="logic.js"></script>
 </body>
 </html>
